@@ -7,6 +7,10 @@ public class style
 	ArrayList<String> lines;
 	boolean isJava;
 	
+	// When running from command line, provide the address of the code to parse as the first argument
+	// Not foolproof, not anywhere near as smart as a compiler
+	// There will be false positives and there will be a few rare style errors that can slip through
+	// Try running this on its own source to see its effectiveness.  Many style errors are present.
 	public static void main(String[] args) throws Exception
 	{
 		if (args.length < 1)
